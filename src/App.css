@@ -1,0 +1,309 @@
+* {
+  font-family: "Heebo", sans-serif;
+}
+.colorBlue {
+  color: #1f5cd4 !important;
+}
+
+
+.blueBtn {
+  background-color: #1f5cd4;
+  color: #fff;
+}
+
+.blueBtn:hover {
+  background-color: #d8e4fa;
+  color: #1c1c1c;
+}
+
+.borderBlueBtn:hover {
+  border: 1px solid transparent;
+  background-color: #d8e4fa;
+  color: #1c1c1c;
+}
+
+.fs-nav {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fbf9f2;
+  line-height: 20px;
+}
+
+.nav-btn {
+  background-color: #a6c0f0;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.outline-0:focus {
+  outline: none !important;
+}
+
+.btn:focus {
+  outline: none !important;
+}
+
+.nav-btn:hover {
+  background-color: #1f5cd4;
+  color: #fff;
+}
+
+
+/* hero section */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 450px;
+  padding: 20px;
+}
+
+.hero-content {
+  flex: 1 1 100%;
+  max-width: 600px;
+  order: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  /* border-radius: 60px; */
+  background-color: #fff;
+  padding: 7px 7px;
+  margin-top: 30px;
+}
+
+.border-1px-solid-black {
+  border: 1px solid rgb(119, 117, 117);
+}
+
+.border-1px-solid-black {
+  border: 1px solid rgb(119, 117, 117);
+}
+
+.border-l-1px-solid-black {
+  border-left: 1px solid rgb(119, 117, 117);
+}
+
+.border-transparent {
+  border-color: transparent !important;
+}
+
+.hero-content form input[type="text"] {
+  flex-grow: 1;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+.hero-content form button[type="submit"] {
+  padding: 0.6rem 3rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1 1 100%;
+  /* max-width: 100%; */
+  margin-top: 20px;
+  position: absolute;
+  top: 50px;
+  right: -10%;
+  order: 2;
+}
+
+.hero-image img {
+  height: 300px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+
+
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  /* border-radius: 5px; */
+  background-color: #1f5cd4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #d8e4fa;
+  color: #1c1c1c;
+}
+
+.search-text {
+  display: none;
+}
+
+
+
+.category-carousel-card {
+  background-color: #fff;
+  transition: .2s;
+}
+
+.category-carousel-card:hover {
+  background-color: #fafafc;
+  box-shadow: 0px 5px 10px rgba(143, 143, 143, 0.351);
+  transform: translateY(3px);
+}
+
+
+
+
+
+.styles_feedHeading__ju0kk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+/* auto scroll component  */
+
+.auto-scroll-container {
+  display: flex;
+  /* Use flex instead of grid for inline scrolling */
+  flex-wrap: nowrap;
+  /* Prevents wrapping of content */
+  overflow: hidden;
+  /* Hides anything outside the box */
+}
+
+.slide-track {
+  display: flex;
+  animation: scroll 1000s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.autoScrollCard {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 20px;
+}
+
+/* Adding hover effect to pause animation */
+.auto-scroll-container:hover .slide-track {
+  animation-play-state: paused;
+}
+
+
+/* category list */
+.categoryCard {
+  break-inside: avoid;
+}
+
+.GridContainer {
+  -webkit-column-count: 4;
+  columns: 20px 4;
+  column-gap: 16px;
+}
+
+.autoScrollCard {
+  transition: .3s;
+}
+
+.autoScrollCard:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 10px 20px rgba(128, 128, 128, 0.194);
+}
+
+.cardShadow {
+  transition: .4s;
+}
+
+.cardShadow:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.244);
+}
+
+
+
+/* popular search Box css */
+
+.BorderBlue {
+  border: 1px solid #1f5cd4;
+}
+
+/* recently review slider  */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* highlight searched text  */
+.Highlight {
+  background-color: rgb(245, 245, 91);
+}
+
+
+
+
+.video-container {
+  position: relative;
+  margin: auto;
+}
+
+.thumbnail-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+
+
+
